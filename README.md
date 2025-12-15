@@ -1,3 +1,19 @@
 # UpgradingACrealityCR-10V1ToUseItIn2025
-I need a 3D printer for my projects... not an old and buggy machine from 2017. So I decided to  start this adventure, while hoping to get a final result that will match my expectations. In this project I'll upgrade all the most important parts of my CR-10 V1 and, obliviously, I'll fix all problems that I'll encounter.
-I'm now publishing the BOM, I'll later add a complete guide to upgrades here!
+My old Creality CR-10 V1 wasn’t fitting my necessary, so I decided to start upgrading it. The first thing I’ve done was buying and installing a new PEI bed with better adesion than the old glass bed. During the installation I’ve made an error: I placed the magnetic sticker on the glass pane, and not on the heatbed. So now I have to order a new magnetic sticker and install it on the heatbed. Another upgrade I already made is the installation of a BL-Touch sensor. Basically is a sensor that permits to create a model of the bed to adjust its non-uniformity. For this sensor I’ve printed a custom support to hold it near to the nozzle. I also used a Raspberry Pi 3B+ to install and run Klipper, a firmware that basically makes the Raspberry, instead of the mainboard, do all calculations needed for printing for better precision. My first decision was to include the Raspberry into the 3D printer case, so I bought a power supply 12V to 5V for the Raspberry, a little fan kit to cool down the SBC and a female-to-male 20 cm ethernet cable to take the LAN from outside the case and connecting it to the Raspberry. I assembled all the components inside the 3D printer enclosure, I wired the power supply to the Raspberry and I wired the BL-Touch to the mainboard. This sensor has two parts: the sensor itself and a servo motor to move the probe to activate the sensor. The sensor itself is wired to the mainboard as Z-stop but the servo is connected through an adapter to the old buzzer pin. Once everything was assembled the printer didn’t work: basically I made a short, the Raspberry MicroSD was then corrupted and the heatbed MOSFET doesn’t work anymore. This is my actual situation: I replaced the Raspberry MicroSD with a new one so the printer itself works  but the bed heats up very slowly as the MOSFET output is 10.5V instead of 12V. Before knowing that the problem was the MOS, I did different hours (5+) of troubleshooting. 
+
+What to do:
+- Install the new MOSFET module (Already ordered, is arriving)
+- Install the new magnetic sticker for the heatbed (Already ordered, is arriving)
+- Install the new hotend: TCHC TR6 from Triangle-Lab (Already ordered, is arriving)
+- 3D print and install some little upgrades, like bigger bed screws heads and cables chains holder
+- Install silicone bed springs (Already ordered, is arriving)
+
+What is done:
+- Klipper installation and configuration (Done two times for MicroSD corruption)
+- BL-Touch installation, wiring and configuration in Klipper
+- PEI bed installation (Placed the magnetic sticker on the glass pane, so is wrong)
+- BL-Touch mount installation (3D printed)
+- Heatbed slow heating troubleshooting
+- Parts ordering (See the BOM)
+
+<img width="4032" height="3024" alt="IMG_0765-min" src="https://github.com/user-attachments/assets/86c77208-c505-49c2-99dc-a666ed6263d4" />
