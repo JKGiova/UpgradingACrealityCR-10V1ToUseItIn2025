@@ -23,3 +23,7 @@ Here's the BOM:
 | Vertical support rods                           |                                           |                                                                                                                                                                                                 |
 | Custom hotend cover                             | 3D printed!                               |                                                                                                                                                                                                 |
 | Second Z axis kit                               |                                           |                                                                                                                                                                                                 |
+
+Here are some pics:
+<img width="3024" height="4032" alt="IMG_0817" src="https://github.com/user-attachments/assets/42c4eadd-24b2-497e-ad52-6c66b363b22f" />
+<img width="3024" height="4032" alt="IMG_0822" src="https://github.com/user-attachments/assets/c4a01af8-fda4-4b28-bc98-314f7b3d1ffb" />
